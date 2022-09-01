@@ -14,9 +14,9 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-    <nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
+    <nav  class="navbar navbar-light bg-light navbar-expand-lg fixed-top" >
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/imgs/brand.svg" alt="" class="brand-img"></a>
+            <div class="brand-container"><a><img src="assets/imgs/brand.svg" alt="brand-image" class="brand-img" href="#home"></a></div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -118,7 +118,7 @@
         <br>
         <div class="container">
             <h6 class="xs-font mb-0">Portfolio</h6>
-            <h3 class="section-title pb-4">...and what I've used them to build</h3>
+            <h3 class="section-title pb-4">...and what I've built using them</h3>
         </div>
         <div>
            <div class="project-container">
@@ -156,10 +156,10 @@
         <br>
         <div class="container">
             <div class="infos mb-4 mb-md-2">
-            <div class="title">
-                <h6 class="subtitle font-weight-normal">Need a website?</h6>
+            <div class="contact-header">
+                <h6 class="contact-sub">Need a website?</h6>
                 <h5 class="emphatic"><b>Look no further.</b></h5>
-                <p class="font-small">Let me have the privilege of creating <br>a beautiful space for your content.</p>
+                <h6 class="contact-sub">Let me have the privilege of creating <br>a beautiful space for your content.</h6>
             </div>
         </div> 
         </div>
@@ -173,7 +173,7 @@
             <div class="row">
                 <div class="col-md-8 col-lg-7">
 
-                    <form class="contact-form">
+                    <form class="contact-form" form method="post" name="contact-us" action="https://formsubmit.co/doppio.web.designs@gmail.com">
                         <div class="form-row">
                             <div class="col form-group">
                                 <input type="text" class="form-control" placeholder="Name">

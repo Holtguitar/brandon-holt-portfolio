@@ -433,7 +433,7 @@ h5,
 }
 
 .emphatic {
-  color: #ca2a2a;
+  color: #ce3a3a;
   text-shadow: 1px 1px 1px rgb(75, 74, 74);
 }
 
@@ -2249,10 +2249,6 @@ pre code {
 
   .table-responsive-sm > .table-bordered {
     border: 0;
-  }
-
-  .infos {
-    /* margin-top: -3rem !important; */
   }
 
   .ti-email {
@@ -4930,6 +4926,7 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.8rem 1rem;
+  background: transparent;
 }
 
 .navbar > .container,
@@ -4951,7 +4948,7 @@ input[type="button"].btn-block {
   justify-content: space-between;
 }
 
-.navbar-brand {
+/* .navbar-brand {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
@@ -4959,7 +4956,8 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
-}
+  width: 3rem;
+} */
 
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -11854,9 +11852,19 @@ p {
   background: #ffc107 !important;
 }
 
-.navbar-brand .brand-img {
-  width: 45px;
-  margin: -0.3125rem 0;
+.brand-img {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  width: 3rem;
+}
+
+.brand-img:hover {
+  cursor: pointer;
 }
 
 .navbar-toggler {

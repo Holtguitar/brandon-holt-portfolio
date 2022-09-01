@@ -1,20 +1,18 @@
 // smooth scroll
-$(document).ready(function () {
-  $(".navbar .nav-link").on("click", function (event) {
-    if (this.hash !== "") {
-      event.preventDefault();
+const headerLinks = ".container";
 
-      var hash = this.hash;
+function smoothScroll(el) {
+  document.querySelector(el).addEventListener("click", function (e) {
+    e.preventDefault();
 
-      $("html, body").animate(
-        {
-          scrollTop: $(hash).offset().top,
-        },
-        800,
-        function () {
-          window.location.hash = hash;
-        }
-      );
-    }
+    // if (
+    //   e.target.classList.contains("nav-link") ||
+    //   e.target.classList.contains(".brand-img")
+    // ) {
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    // }
   });
-});
+}
+
+smoothScroll(headerLinks);
